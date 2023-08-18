@@ -36,7 +36,25 @@ functions: required functions ( Object )
   | ___ getFPS: a function to get the screen refresh rate ( Function ) 
 
 
-  | ___ scanUA: a function required for *arch()* to work.
+  | ___ scanUA: a function required for *arch()* to work. ( Function )
+
+
+getIP: promise to get IP Address ( Function )
+
+
+gpu: Info About GPU ( Function )
+
+
+ip: sets the *window.ip* variable to the IP address. ( Function )
+
+
+java: Is Java Enabled ( Boolean )
+
+
+localdate: Local Date of the Client ( Object ) 
+
+
+
 
   
 
