@@ -1,4 +1,4 @@
-var ip;
+var ip
 let sc; // latest stable Chrome release
 let sf; // latest stable firefox release
 let hz; // screen hertz, based on fps
@@ -6,12 +6,24 @@ var uniqueness = {
     date: new Date().toUTCString(),
     utc: new Date().toUTCString(),
     localdate: new Date(),
+
+    getIP: () => {
+        return fetch('//ip.rednexie.repl.co/json')
+          .then(response => response.json())
+          .catch(err => console.error(err));
+      },
+
     ip: () => {
-        fetch('//ip.rednexie.repl.co/api/json')
-        .then(response => response.json()).then(data => {
+        fetch('//ip.rednexie.repl.co/json')
+        .then(response => response.json())
+        .then(data => {
             ip = data;
-            return ip
-        })        
+            return "sa";
+        })
+        .catch(err => {
+            console.error(err)
+        })
+
     },
     gpu: () => {
         try{
