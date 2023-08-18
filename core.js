@@ -1,10 +1,11 @@
-
 var ip;
 let sc; // latest stable Chrome release
 let sf; // latest stable firefox release
 let hz; // screen hertz, based on fps
 var uniqueness = {
     date: new Date().toUTCString(),
+    utc: new Date().toUTCString(),
+    localdate: new Date(),
     ip: () => {
         fetch('//ip.rednexie.repl.co/api/json')
         .then(response => response.json()).then(data => {
@@ -31,6 +32,87 @@ var uniqueness = {
             return null;
         }
     },
+
+    browser: () => {
+        
+            let ua = window.navigator.userAgent || null;
+            let browser = "unknown";
+        
+            if(ua.includes("Chrome")){
+            
+                browser = "Google Chrome"
+        
+            if(ua.toLowerCase().includes("ucbrowser")){
+                browser = "UC Browser"
+            }
+            if(ua.includes("EdgA")){
+                browser = "Microsoft Edge on Android";
+            }
+            if(ua.includes("UCBrowser")){
+                browser = "UC Browser"
+            }
+            if(ua.includes("Edge")){
+                browser =  "Microsoft Legacy Edge";
+            }
+            if(ua.includes("Edg")){
+                browser =  "Microsoft Edge";
+            }
+            if(ua.includes("OPRGX")){
+                browser =  "Opera GX";
+            }
+            if(ua.includes("OPX")){
+                browser = "Opera GX"
+            }
+            if(ua.includes("Opera")){
+                browser =  "Opera Mini";
+            }
+            if(ua.includes("OPR")){
+                browser =  "Opera";
+            }
+            if(ua.includes("YaBrowser")){
+                browser =  "Yandex Browser";
+             }
+            if(ua.includes("Yowser")){
+                browser =  "Yandex Browser";
+            }
+            if(ua.includes("MMS")){
+                browser =  "Opera Neon";
+            }
+            if(ua.includes("MMS")){
+                browser =  "Opera Neon";
+            }
+            if(ua.includes("MMS")){
+                browser =  "Opera Neon";
+            }
+            if(ua.includes("MMS")){
+                browser =  "Opera Neon";
+            }
+            if(ua.includes("DuckDuckGo")){
+                browser = "DuckDuckGo"
+            }
+            if(ua.includes("Build") && ua.includes("Android")){
+                browser =  "Android WebView";
+            }
+            if(ua.includes("Samsung Browser")){
+                browser = "Samsung Browser";
+            }
+            if(ua.includes("AvastSecureBrowser")){
+                browser = "Avast Secure Browser Android"
+            }
+            
+            }
+            else{
+            if(ua.includes("MSIE")){
+                browser = "Microsoft Edge"
+            }
+            if(ua.includes("Firefox")){
+                browser = "Mozilla Firefox"    
+            }
+        }
+
+        return browser;
+    },
+
     screen: () => {
 
         let width;
