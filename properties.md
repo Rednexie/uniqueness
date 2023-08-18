@@ -33,16 +33,10 @@ fullscreen: Is The Browser Fullscreen ( Function )
 functions: required functions ( Object )
 
 
-  ||
+  | ___ getFPS: a function to get the screen refresh rate ( Function ) 
 
-  
-  || -- getFPS: a function to get the screen refresh rate ( Function ) 
 
-  
-  ||
-
-  
-  || -- scanUA: a function required for *arch()* to work.
+  | ___ scanUA: a function required for *arch()* to work.
 
   
 
