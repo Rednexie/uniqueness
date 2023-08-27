@@ -8,7 +8,7 @@ Uniqueness is a client-side javascript module, which you can use to get some inf
 
 # Properties & Features
 
-[properties.md] (https://github.com/Rednexie/uniqueness/blob/main/properties.md)
+[properties.md](https://github.com/Rednexie/uniqueness/blob/main/properties.md)
 
 
 
