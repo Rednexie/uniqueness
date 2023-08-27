@@ -53,12 +53,54 @@ java: Is Java Enabled ( Boolean )
 
 localdate: Local Date of the Client ( Object ) 
 
+os: Client Operating System ( Function )
+
+supports: browser support for features, return boolean ( Object ) 
+
+
+| ___ base64: does the browser support base64 encoding? ( Function )
+
+
+| ___ cookie: does the browser support cookies? ( Function )
+
+
+| ___ encode: does the browser support base64 encoding? ( Function )
+
+
+| ___ html5: does the browser support HTML 5? ( Function )
+
+
+| ___ localstorage: does the browser support Local Storage? ( Function )
+
+
+| ___ notification: does the browser support Notifications? ( Function )
+
+
+| ___ sessionstorage: does the browser support session storage? ( Function )
+
+
+| ___ share: does the browser support Share? ( Function )
+
+
+| ___ speech: does the browser support Speech Recognition? ( Function )
+
+
+| ___ storage: does the browser support Navigator Storage? ( Function )
 
 
 
-  
+| ___ vibrate: does the browser support Vibrate? ( Function )
 
 
+timezone: timezone ( String )
+
+utc:  Universal Time Coordinated (UTC) ( Date )
+
+vendor: vendor ( String )
+
+version: Chromium Version ( Function ) 
+
+browserVersion: Browser Version based on User Agent ( Function ) 
 
 
 
