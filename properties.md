@@ -98,7 +98,7 @@ utc:  Universal Time Coordinated (UTC) ( Date )
 
 vendor: vendor ( String )
 
-version: Chromium Version ( Function ) 
+chromiumVersion: Chromium Version ( Function ) 
 
 browserVersion: Browser Version based on User Agent ( Function ) 
 
