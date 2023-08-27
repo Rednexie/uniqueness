@@ -427,9 +427,18 @@ var uniqueness = {
         java: navigator.javaEnabled(),
         color: window.screen.colorDepth,
         orientation: window.screen.orientation.type,
-        version: window.navigator.userAgentData.brands[2].version || window.navigator.userAgentData.brands[1].version,
+        chromiumVersion: window.navigator.userAgentData ? window?.navigator.userAgentData.brands[2].version || window?.navigator.userAgentData.brands[1].version : null,
         dnt: navigator.doNotTrack, 
-
+        browserVersion: () => {
+            const userAgent = window.navigator.userAgent || "";
+            const matches = userAgent.match(/(chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i);
+            if (matches) {
+              const browser = matches[1].toLowerCase();
+              const version = parseInt(matches[2], 10);
+              return { browser, version }; // Extracted browser and version
+            }
+            return null; // Browser version not found
+          },
         fullscreen: function() {
             return window.screen.availWidth == window.outerWidth && window.screen.availHeight == window.outerHeight;
         },
