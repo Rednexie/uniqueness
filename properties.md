@@ -33,10 +33,10 @@ fullscreen: Is The Browser Fullscreen ( Function )
 functions: required functions ( Object )
 
 
-  | ___ getFPS: a function to get the screen refresh rate ( Function ) 
+  - getFPS: a function to get the screen refresh rate ( Function ) 
 
 
-  | ___ scanUA: a function required for *arch()* to work. ( Function )
+  - scanUA: a function required for *arch()* to work. ( Function )
 
 
 getIP: promise to get IP Address ( Function )
@@ -58,38 +58,38 @@ os: Client Operating System ( Function )
 supports: browser support for features, return boolean ( Object ) 
 
 
-| ___ base64: does the browser support base64 encoding? ( Function )
+- base64: does the browser support base64 encoding? ( Function )
 
 
-| ___ cookie: does the browser support cookies? ( Function )
+- cookie: does the browser support cookies? ( Function )
 
 
-| ___ encode: does the browser support base64 encoding? ( Function )
+- encode: does the browser support base64 encoding? ( Function )
 
 
-| ___ html5: does the browser support HTML 5? ( Function )
+- html5: does the browser support HTML 5? ( Function )
 
 
-| ___ localstorage: does the browser support Local Storage? ( Function )
+- localstorage: does the browser support Local Storage? ( Function )
 
 
-| ___ notification: does the browser support Notifications? ( Function )
+- notification: does the browser support Notifications? ( Function )
 
 
-| ___ sessionstorage: does the browser support session storage? ( Function )
+- sessionstorage: does the browser support session storage? ( Function )
 
 
-| ___ share: does the browser support Share? ( Function )
+- share: does the browser support Share? ( Function )
 
 
-| ___ speech: does the browser support Speech Recognition? ( Function )
+- speech: does the browser support Speech Recognition? ( Function )
 
 
-| ___ storage: does the browser support Navigator Storage? ( Function )
+- storage: does the browser support Navigator Storage? ( Function )
 
 
 
-| ___ vibrate: does the browser support Vibrate? ( Function )
+- vibrate: does the browser support Vibrate? ( Function )
 
 
 timezone: timezone ( String )
