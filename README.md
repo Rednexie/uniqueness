@@ -26,4 +26,9 @@ For a detailed list of the properties available within the Uniqueness object, pl
 
 Uniqueness provides a convenient way to gather insights about your website's visitors, whether you're interested in logging user data, enhancing security, or customizing the user experience. It's a versatile tool that can be especially valuable for static websites that don't have a backend server for data collection and analysis.
 
-
+### Possible Updates: 
+- Database Integration
+  - MongoDB
+  - PermaDB
+  - MySQL
+  - JSON
