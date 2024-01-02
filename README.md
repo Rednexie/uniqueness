@@ -32,6 +32,6 @@ Uniqueness provides a convenient way to gather insights about your website's vis
   - PermaDB
   - MySQL
  
-### Notice (!)
+### Notice ⚠️
 
 The Uniqueness Project is licensed under GNU General Public License v3.0 meaning regardless of size of the modification/change, the modified version HAS to be open-source and including the same license. 
