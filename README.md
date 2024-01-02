@@ -31,4 +31,3 @@ Uniqueness provides a convenient way to gather insights about your website's vis
   - MongoDB
   - PermaDB
   - MySQL
-  - JSON
