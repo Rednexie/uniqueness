@@ -444,12 +444,15 @@ var uniqueness = {
         },
 
 
-        ram: function(){
+        ram: () => {
             if(navigator.deviceMemory && !isNaN(Number(navigator.deviceMemory))){
                 return navigator.deviceMemory + "+ GB";
             }
             else return "undetected"
             
+        },
+        ramgb: () => { 
+            typeof Number(navigator.deviceMemory) === "number" : Number(navigator.deviceMemory) : null;
         },
 
 
