@@ -1,0 +1,23 @@
+CREATE TABLE logs ( 
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    browser VARCHAR(255),
+	  os VARCHAR(255),
+	  architecture VARCHAR(255),
+    dark_mode TINYINT,
+    referer VARCHAR(255),
+    cpu TINYINT,
+    orientation VARCHAR(255),
+    ram TINYINT,
+    res VARCHAR(255),
+    cookie TINYINT,
+    supports_cookie TINYINT,
+    url VARCHAR(255),
+    gpu VARCHAR(255),
+    time INT,
+    browser_version TINYINT,
+    lang VARCHAR(2),
+    timezone VARCHAR(255),
+    html5 TINYINT,
+    do_not_track TINYINT,
+    extra TEXT
+);
