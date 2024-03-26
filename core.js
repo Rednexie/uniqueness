@@ -452,7 +452,7 @@ var uniqueness = {
             
         },
         ramgb: () => { 
-            typeof Number(navigator.deviceMemory) === "number" : Number(navigator.deviceMemory) : null;
+            typeof Number(navigator.deviceMemory) === "number" ? Number(navigator.deviceMemory) : null;
         },
 
 
