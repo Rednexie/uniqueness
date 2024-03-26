@@ -1,9 +1,10 @@
 CREATE TABLE logs ( 
     id INT PRIMARY KEY AUTO_INCREMENT,
     browser VARCHAR(255),
-	  os VARCHAR(255),
-	  architecture VARCHAR(255),
+    os VARCHAR(255),
+    architecture VARCHAR(255),
     dark_mode TINYINT,
+    fullscreen TINYINT,
     referer VARCHAR(255),
     cpu TINYINT,
     orientation VARCHAR(255),
