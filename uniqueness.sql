@@ -1,5 +1,6 @@
 CREATE TABLE logs ( 
     id INT PRIMARY KEY AUTO_INCREMENT,
+    ip VARCHAR(255),
     browser VARCHAR(255),
     os VARCHAR(255),
     architecture VARCHAR(255),
